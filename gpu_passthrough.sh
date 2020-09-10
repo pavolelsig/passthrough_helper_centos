@@ -1,8 +1,8 @@
 echo "Installing required packages"
 
-yum groupinstall "Virtualization Host" -y
+dnf groupinstall "Virtualization Host" -y
 
-yum install virt-install virt-manager -y
+dnf install virt-install virt-manager -y
 
 
 if ! [ -a Backup ]
